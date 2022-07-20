@@ -27,11 +27,6 @@ namespace RazorPages
 
         public IActionResult OnPost()
         {
-            //if (ModelState.IsValid == false)
-            //{
-            //    return Page();
-            //}
-            //return RedirectToPage("/Index", new { Address.City }); 
             return RedirectToPage("/Forms/AddAddress", new { Address.StreetAddress, Address.City, Address.State,  Address.ZipCode });
         }
     }
